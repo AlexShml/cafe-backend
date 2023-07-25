@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "shawarma from the chef",
+    "image": "/Images/shaurma.jpg",
+    "description": "Description of the dish"
+  },
+  {
+    "id": 2,
+    "name": "Fish",
+    "image": "/Images/fish.jpg",
+    "description": "Description of the dish sdfsdfxzddgfdfghdfsfyjdghnsfgbsdfbsfgndfgnsfbsfgndghndfgndfgndgh"
+  },
+  {
+    "id": 3,
+    "name": "Bakery",
+    "image": "/Images/bakery.jpg",
+    "description": "Description of the dish"
+  },
+  {
+    "id": 4,
+    "name": "Snack",
+    "image": "/Images/sneack.jpg",
+    "description": "Description of the dish"
+  },
+  {
+    "id": 5,
+    "name": "Drink",
+    "image": "/Images/drink.jpg",
+    "description": "Description of the dish"
+  }
+]
