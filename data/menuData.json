@@ -9,7 +9,7 @@
     "id": 2,
     "name": "Fish",
     "image": "/Images/fish.jpg",
-    "description": "Description of the dish sdfsdfxzddgfdfghdfsfyjdghnsfgbsdfbsfgndfgnsfbsfgndghndfgndfgndgh"
+    "description": "Description of the dish. It's a test of a  menu card's dinamic size. Which determine the biggest of them and make size of others like it."
   },
   {
     "id": 3,

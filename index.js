@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Обработка GET-запроса на главную страницу
 app.get("/", (req, res) => {
-  res.send("Добро пожаловать в кафе!");
+  res.send("Welcome");
 });
 
 // API для получения меню кафе
@@ -52,6 +52,21 @@ app.post("/api/saveSelectedItems", (req, res) => {
       res.status(500).json({ error: "Ошибка при сохранении данных" });
     } else {
       console.log("Данные успешно сохранены в файл JSON.");
+      res.sendStatus(200);
+    }
+  });
+});
+
+// API для очистки файла orderData.json
+app.post("/api/clearSelectedItems", (req, res) => {
+  // Очищаем данные в файле orderData.json
+  const selectedItems = [];
+  fs.writeFile(dataFilePath, JSON.stringify(selectedItems), (err) => {
+    if (err) {
+      console.error("Ошибка при очистке файла:", err);
+      res.status(500).json({ error: "Ошибка при очистке файла" });
+    } else {
+      console.log("Файл успешно очищен.");
       res.sendStatus(200);
     }
   });
